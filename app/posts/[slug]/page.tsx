@@ -9,7 +9,7 @@ import { remark } from "remark";
 import html from "remark-html";
 import fs from "fs/promises";
 
-// export const runtime = "edge";
+export const runtime = "edge";
 
 async function getData(slug: string) {
   "use server";
