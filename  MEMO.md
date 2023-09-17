@@ -49,3 +49,19 @@ const nextConfig = {
 module.exports = nextConfig;
 
 ```
+
+Cloud FlareのEdge API/Workersでは、fsが使えないので、remarkを使わない
+
+https://nextjs.org/docs/messages/node-module-in-edge-runtime
+
+別途、APIを用意するか、SSGで生成するか
+
+```
+npm i -D daisyui@latest
+```
+
+configに追記
+
+```
+plugins: [require("daisyui")],
+```

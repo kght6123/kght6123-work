@@ -42,6 +42,7 @@
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.6.1",
     "@types/validator": "^13.11.1",
+    "daisyui": "^3.7.5",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-perfectionist": "^2.1.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
