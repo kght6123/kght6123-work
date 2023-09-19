@@ -1,10 +1,11 @@
+import { Main } from "$/_ui/atoms/main";
 import Image from "next/image";
 
 export const runtime = "edge";
 
 export default function Home() {
   return (
-    <main className="carousel carousel-vertical rounded-box h-screen w-screen">
+    <Main className="carousel carousel-vertical h-screen w-screen">
       {/* Hero、区切り区切りに入れていく */}
       <div
         style={{
@@ -359,6 +360,6 @@ export default function Home() {
           </div>
         </div>
       </dialog>
-    </main>
+    </Main>
   );
 }
