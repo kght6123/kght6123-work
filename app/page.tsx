@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="chat chat-end">
               <div className="chat-bubble text-sm">
-                2年以上経験: React/Vue/Tailwind CSS/TypeScript/Bootstrap
+                1〜2年以上経験: React/Vue/Tailwind CSS/TypeScript/Bootstrap
               </div>
             </div>
             <div className="chat chat-start">

@@ -85,7 +85,7 @@ export default function RootLayout({
             </ul>
           </div>
           <div className="navbar-end  hidden @[16rem]/main:inline-flex">
-            <div className="dropdown-end dropdown">
+            <div className="dropdown dropdown-end">
               <label className="btn btn-circle btn-ghost" tabIndex={0}>
                 <div className="indicator">
                   <svg
@@ -108,6 +108,8 @@ export default function RootLayout({
                 このサイトはkght6123こと、古賀広隆のポートフィリオです。技術書典などにて、げぐはつ書房として活動しています。
                 <br />
                 このサイトはNext.jsのAppRouterで構築されています。
+                <br />
+                なるべく、UIにはJavaScriptを使わず、CSSで実装しています。
               </div>
             </div>
             <div className="dropdown-end dropdown">
