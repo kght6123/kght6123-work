@@ -4,6 +4,16 @@ const nextConfig = {
     appDir: true,
     serverActions: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "dummyimage.com",
+        pathname: "/**",
+        port: "",
+        protocol: "https",
+      },
+    ],
+  },
   reactStrictMode: true,
 };
 

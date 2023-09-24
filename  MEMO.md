@@ -65,3 +65,13 @@ configに追記
 ```
 plugins: [require("daisyui")],
 ```
+
+container-queriesを導入する
+
+```
+npm install @tailwindcss/container-queries
+```
+
+```
+  plugins: [require("@tailwindcss/container-queries"), require("daisyui")],
+```

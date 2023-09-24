@@ -7,7 +7,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["valentine"],
+  },
+  plugins: [require("@tailwindcss/container-queries"), require("daisyui")],
   theme: {
     extend: {
       backgroundImage: {

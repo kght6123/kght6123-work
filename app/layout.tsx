@@ -19,14 +19,14 @@ export default function RootLayout({
       <body>
         {children}
         {/* ナビゲーションバー */}
-        <nav className="navbar fixed top-0 bg-base-100/60 transition-transform duration-200 ease-linear peer-data-[scroll-up=false]/body:scale-0">
+        <nav className="navbar fixed inset-x-auto top-0 z-30 bg-base-content/90 text-neutral-content transition-all duration-500 ease-linear @container/main peer-data-[scroll-up=false]/body:inset-x-[calc(50%-256px/2)] peer-data-[scroll-up=false]/body:mt-4 peer-data-[scroll-up=false]/body:w-64 peer-data-[scroll-up=false]/body:rounded-full">
           {/* TODO: コンテナクエリーでメニューだけ出す */}
-          <div className="navbar-start">
+          <div className="navbar-start hidden @[16rem]/main:inline-flex">
             <a className="btn btn-ghost text-xl normal-case">
               kght6123<span className="-mb-1 text-xs">by Hirotaka Koga</span>
             </a>
           </div>
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center flex @[16rem]/main:hidden @[36rem]/main:flex">
             <ul className="menu menu-horizontal px-1">
               {/* TODO リンクで各章に飛ぶ */}
               <li>
@@ -50,7 +50,7 @@ export default function RootLayout({
               </li>
             </ul>
           </div>
-          <div className="navbar-end">
+          <div className="navbar-end  hidden @[16rem]/main:inline-flex">
             <div className="dropdown-end dropdown">
               <label className="btn btn-circle btn-ghost" tabIndex={0}>
                 <div className="indicator">
@@ -116,7 +116,7 @@ export default function RootLayout({
           </div>
         </nav>
         {/* フッター */}
-        <footer className="footer footer-center fixed bottom-0 bg-base-100/60 p-10 text-base-content transition-transform duration-200 ease-linear peer-data-[scroll-up=false]/body:scale-0">
+        <footer className="footer footer-center fixed bottom-0 z-30 bg-base-content/90 p-10 text-neutral-content transition-all duration-200 ease-linear peer-data-[scroll-up=false]/body:scale-0">
           <nav className="grid grid-flow-col gap-4">
             {/* TODO リンクで各章に飛ぶ */}
             <a
@@ -158,6 +158,7 @@ export default function RootLayout({
                 rel="noopener noreferrer"
                 target="_blank"
               >
+                {/* Twitter */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="fill-current"
@@ -173,8 +174,9 @@ export default function RootLayout({
                 rel="noopener noreferrer"
                 target="_blank"
               >
+                {/* GitHub */}
                 <svg
-                  className="fill-base-content stroke-none"
+                  className="fill-current stroke-none"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 96 96"
                   height="24"
@@ -192,6 +194,7 @@ export default function RootLayout({
                 rel="noopener noreferrer"
                 target="_blank"
               >
+                {/* Facebook */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="fill-current"

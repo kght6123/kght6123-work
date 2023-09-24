@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import clsx from "clsx";
-import _ from "lodash";
 
 interface ScrollInfo {
   scrollTop: number;
@@ -30,13 +29,13 @@ export const Main = ({
             scrollTop: mainRef.current?.scrollTop || 0,
             scrollUp:
               mainRef.current !== null &&
-              Math.abs(mainRef.current.scrollTop - scrollTop) > 40
+              Math.abs(mainRef.current.scrollTop - scrollTop) > 10
                 ? mainRef.current.scrollTop < scrollTop
                 : scrollUp,
           };
         })
       }
-      className={clsx(className, "group/body peer/body")}
+      className={clsx(className, "group/body peer/body scroll-smooth")}
       data-scroll-up={scrollInfo.scrollUp}
       ref={mainRef}
     >

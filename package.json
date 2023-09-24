@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@tailwindcss/container-queries": "^0.1.1",
     "@types/node": "20.6.1",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
@@ -20,7 +21,6 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "gray-matter": "^4.0.3",
-    "lodash": "^4.17.21",
     "next": "13.4.19",
     "postcss": "8.4.29",
     "react": "18.2.0",
@@ -42,7 +42,6 @@
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.6.1",
-    "@types/lodash": "^4.14.198",
     "@types/validator": "^13.11.1",
     "daisyui": "^3.7.5",
     "eslint-config-prettier": "^9.0.0",
