@@ -30,23 +30,57 @@ export default function RootLayout({
             <ul className="menu menu-horizontal px-1">
               {/* TODO リンクで各章に飛ぶ */}
               <li>
-                <a>Item 1</a>
+                <a
+                  className="link hover:bg-base-content hover:text-neutral-content"
+                  href="#top"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    className="h-6 w-6"
+                    strokeWidth={1.5}
+                    fill="none"
+                  >
+                    <path
+                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                      strokeLinejoin="round"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </a>
               </li>
               <li tabIndex={0}>
                 <details>
-                  <summary>Parent</summary>
+                  <summary className="link hover:bg-base-content hover:text-neutral-content">
+                    目次
+                  </summary>
                   <ul className="p-2">
                     <li>
-                      <a>Submenu 1</a>
+                      <a className="link text-base-content" href="#history">
+                        主に携わったプロジェクトの一覧
+                      </a>
                     </li>
                     <li>
-                      <a>Submenu 2</a>
+                      <a className="link text-base-content" href="#results">
+                        個人開発などの実績の一覧
+                      </a>
+                    </li>
+                    <li>
+                      <a className="link text-base-content" href="#skills">
+                        業務スキルの一覧
+                      </a>
                     </li>
                   </ul>
                 </details>
               </li>
               <li>
-                <a>Item 3</a>
+                <a
+                  className="hover:bg-base-content hover:text-neutral-content"
+                  href="#documents"
+                >
+                  資料など
+                </a>
               </li>
             </ul>
           </div>
@@ -64,23 +98,16 @@ export default function RootLayout({
                       strokeLinecap="round"
                     />
                   </svg>
-                  <span className="badge indicator-item badge-sm">8</span>
+                  <span className="badge indicator-item badge-sm">1</span>
                 </div>
               </label>
               <div
-                className="card dropdown-content card-compact z-[1] mt-3 w-52 bg-base-100 shadow"
+                className="card dropdown-content card-compact z-[1] mt-3 w-64 bg-base-100 p-4 text-sm text-base-content shadow"
                 tabIndex={0}
               >
-                {/* TODO チャット形式で挨拶を書く */}
-                <div className="card-body">
-                  <span className="text-lg font-bold">8 Items</span>
-                  <span className="text-info">Subtotal: $999</span>
-                  <div className="card-actions">
-                    <button className="btn btn-primary btn-block">
-                      View cart
-                    </button>
-                  </div>
-                </div>
+                このサイトはkght6123こと、古賀広隆のポートフィリオです。技術書典などにて、げぐはつ書房として活動しています。
+                <br />
+                このサイトはNext.jsのAppRouterで構築されています。
               </div>
             </div>
             <div className="dropdown-end dropdown">
@@ -94,11 +121,10 @@ export default function RootLayout({
                   />
                 </div>
               </label>
-              <ul
+              {/* <ul
                 className="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
                 tabIndex={0}
               >
-                {/* TODO 何を置くか検討中 */}
                 <li>
                   <a className="justify-between">
                     Profile
@@ -111,7 +137,7 @@ export default function RootLayout({
                 <li>
                   <a>Logout</a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </nav>

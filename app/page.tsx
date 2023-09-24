@@ -20,8 +20,11 @@ export default function Home() {
   return (
     <Main className="carousel carousel-vertical h-screen w-screen">
       {/* Hero、区切り区切りに入れていく */}
-      <div className="carousel-item hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col sm:flex-row">
+      <div
+        className="carousel-item hero min-h-screen bg-base-200 pt-10 sm:pt-0"
+        id="top"
+      >
+        <div className="hero-content max-w-3xl flex-col sm:flex-row">
           <Image
             className="!static max-w-xs"
             alt="Profile image"
@@ -86,7 +89,7 @@ export default function Home() {
       {/* 職歴ステップ */}
       <div
         className="carousel-item relative flex h-[100rem] items-center justify-center bg-primary-content"
-        id="work-history"
+        id="history"
       >
         <div className="h-full max-w-3xl pl-8">
           <h1 className="absolute top-[6.5rem] text-xl font-bold">
@@ -157,21 +160,9 @@ export default function Home() {
               <div className="absolute left-10 top-[50%] flex h-full w-[calc(100%-6rem)] flex-col content-center justify-center">
                 <div className="chat chat-start">
                   <div className="chat-bubble text-sm">
-                    <a
-                      href="https://speakerdeck.com/toranoana/xin-gui-she-nei-sisutemufalsemotannahurontoentokai-fa-nituite-kai-fa-falsegao-su-hua-tedxwocu-jin"
-                      className="link"
-                      target="_blank"
-                    >
-                      {linkIcon}とらのあな補充発注システム開発 Nuxt.js/ElementUI
-                    </a>
+                    とらのあな補充発注システム開発 Nuxt.js/ElementUI
                     <br />
-                    <a
-                      href="https://www.docswell.com/s/kght6123/KNVL2Z-2022-01-27-211430"
-                      className="link"
-                      target="_blank"
-                    >
-                      {linkIcon}StoryBook駆動開発
-                    </a>
+                    StoryBook駆動開発
                   </div>
                 </div>
                 <div className="chat chat-start">
@@ -181,26 +172,13 @@ export default function Home() {
                 </div>
                 <div className="chat chat-start">
                   <div className="chat-bubble text-sm">
-                    <a
-                      href="https://speakerdeck.com/toranoana/20230331-toranoanatong-fan-hedao-ru-sitaonraindai-he-shi-nituite"
-                      className="link"
-                      target="_blank"
-                    >
-                      {linkIcon}とらのあな通販向けのオンライン待合室開発
-                      Vue.js/Tailwind CSS
-                    </a>
+                    とらのあな通販向けのオンライン待合室開発 Vue.js/Tailwind CSS
                   </div>
                 </div>
                 <div className="chat chat-start">
                   <div className="chat-bubble text-sm">
-                    <a
-                      href="https://yumenosora.co.jp/archives/job/2124"
-                      className="link"
-                      target="_blank"
-                    >
-                      {linkIcon}新サークルポータル アーキテクチャ設計/開発
-                      Next.js/TypeScript/Tailwind CSS
-                    </a>
+                    新サークルポータル アーキテクチャ設計/開発
+                    Next.js/TypeScript/Tailwind CSS
                   </div>
                 </div>
               </div>
@@ -210,7 +188,10 @@ export default function Home() {
         </div>
       </div>
       {/* カード、職歴ごとに代表的なこと */}
-      <div className="carousel-item grid grid-cols-1 gap-4 bg-secondary-content p-4 md:grid-cols-2 xl:grid-cols-3">
+      <div
+        className="carousel-item grid grid-cols-1 gap-4 bg-secondary-content p-4 pt-28 md:grid-cols-2 xl:grid-cols-3"
+        id="results"
+      >
         <div className="card bg-base-300 shadow-xl lg:card-side">
           <figure>
             <Image
@@ -425,8 +406,11 @@ export default function Home() {
         </div>
       </div>
       {/* 経験年数テーブル */}
-      <div className="carousel-item h-full overflow-x-auto bg-primary-content">
-        <table className="table table-pin-rows table-pin-cols table-xs w-full [&>tfoot>tr>td]:text-base-content [&>thead>tr>td]:text-base-content [&_th]:w-8 [&_th]:text-center [&_th]:text-base-content">
+      <div
+        className="carousel-item flex h-full justify-center overflow-x-auto bg-primary-content"
+        id="skills"
+      >
+        <table className="table table-pin-rows table-pin-cols table-xs w-full max-w-3xl [&>tfoot>tr>td]:text-base-content [&>thead>tr>td]:text-base-content [&_th]:w-8 [&_th]:text-center [&_th]:text-base-content">
           <thead>
             <tr>
               <th></th>
@@ -965,56 +949,77 @@ export default function Home() {
           </tfoot>
         </table>
       </div>
-      {/* 縦スクロールコンテンツ、カードの中をスクロールできるように */}
-      <div className="carousel-item h-full">
-        <div className="carousel carousel-vertical rounded-box h-96">
-          <div className="carousel-item h-full">
-            <img src="/images/stock/photo-1559703248-dcaaec9fab78.jpg" />
+      {/* クリックしたら、詳細をモーダルで表示する */}
+      <div
+        className="carousel-item grid h-full grid-cols-1 items-center gap-4 overflow-x-auto bg-primary-content px-4 pb-4 pt-28 md:grid-cols-2 xl:grid-cols-3"
+        id="documents"
+      >
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://speakerdeck.com/player/488cdc518eab47c28dc6e95c2ce62be7?slide=1"
+            title="新規社内システムのモダンなフロントエンド開発について 〜開発の高速化でDXを促進！〜"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            とらのあなラボのTech Conference Vol.2に登壇した時のスライドです。
           </div>
-          <div className="carousel-item h-full">
-            <img src="/images/stock/photo-1565098772267-60af42b81ef2.jpg" />
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://www.docswell.com/slide/KNVL2Z/embed"
+            className="h-64 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            とらのあなラボのLTイベントに登壇した時のスライドです。
           </div>
-          <div className="carousel-item h-full">
-            <img src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg" />
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://speakerdeck.com/player/56c6ad02ad7e4dc5bf47bb28ba8bae12?slide=1"
+            title="20230331_とらのあな通販へ導入したオンライン待合室について"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            とらのあなラボの「オタクが最新技術を追う LTイベント
+            2023春」に登壇した時のスライドです。
           </div>
-          <div className="carousel-item h-full">
-            <img src="/images/stock/photo-1494253109108-2e30c049369b.jpg" />
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://speakerdeck.com/player/ef9a5d3f8ca349298557920a5efc8ea9?slide=1"
+            title="Webページの更新を検知するツールを作った話"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            とらのあなラボのTechConferenceVol.2で開催したLT大会に登壇した時のスライドです。
           </div>
-          <div className="carousel-item h-full">
-            <img src="/images/stock/photo-1550258987-190a2d41a8ba.jpg" />
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/4oiqNSfzzdI?si=ytjsiKJ516vVunLp"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            とらのあなラボ Tech Conference Vol.3に登壇した時の動画です。
           </div>
-          <div className="carousel-item h-full">
-            <img src="/images/stock/photo-1559181567-c3190ca9959b.jpg" />
-          </div>
-          <div className="carousel-item h-full">
-            <img src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" />
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/eThggWcCM6s?si=4g5RokpGLa2CoIeW"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            とらのあなラボ Tech Conference
+            Vol.3で開催したLT大会に登壇した時の動画です。
           </div>
         </div>
       </div>
-      {/* クリックしたら、詳細をモーダルで表示する */}
-      {/* <button
-        onClick={() => document.getElementById("my_modal_5")?.showModal()}
-        className="btn"
-      >
-        open modal
-      </button> */}
-      <dialog
-        className="_modal-open modal modal-bottom sm:modal-middle"
-        id="my_modal_5"
-      >
-        <div className="modal-box">
-          <h3 className="text-lg font-bold">Hello!</h3>
-          <p className="py-4">
-            Press ESC key or click the button below to close
-          </p>
-          <div className="modal-action">
-            <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
-            </form>
-          </div>
-        </div>
-      </dialog>
     </Main>
   );
 }
