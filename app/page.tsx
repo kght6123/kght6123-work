@@ -351,7 +351,7 @@ export default function Home() {
             <Image
               className="!static !max-h-40 object-cover"
               alt="OpenAIChatExtentionのスクリーンショット"
-              src="/VSCode Chat.png"
+              src="/VSCode_Chat.png"
               fill
             />
           </figure>
