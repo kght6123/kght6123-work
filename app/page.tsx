@@ -956,23 +956,13 @@ export default function Home() {
       >
         <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
           <iframe
-            src="https://speakerdeck.com/player/488cdc518eab47c28dc6e95c2ce62be7?slide=1"
-            title="新規社内システムのモダンなフロントエンド開発について 〜開発の高速化でDXを促進！〜"
+            src="https://docs.google.com/presentation/d/e/2PACX-1vR92fIRKyO78_iZ9kqHpJ7hM9-gsMsdbILhLSdxlLKPNcUdxA-xOvGuJ4wfsNGl7g/embed?start=false&loop=true&delayms=3000"
             className="h-80 w-full"
             allowFullScreen={true}
           ></iframe>
           <div className="text-sm">
-            とらのあなラボのTech Conference Vol.2に登壇した時のスライドです。
-          </div>
-        </div>
-        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
-          <iframe
-            src="https://www.docswell.com/slide/KNVL2Z/embed"
-            className="h-64 w-full"
-            allowFullScreen={true}
-          ></iframe>
-          <div className="text-sm">
-            とらのあなラボのLTイベントに登壇した時のスライドです。
+            「オタクが最新技術を追う LTイベント
+            2023夏」に登壇した時のスライドです。
           </div>
         </div>
         <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
@@ -983,8 +973,40 @@ export default function Home() {
             allowFullScreen={true}
           ></iframe>
           <div className="text-sm">
-            とらのあなラボの「オタクが最新技術を追う LTイベント
+            「オタクが最新技術を追う LTイベント
             2023春」に登壇した時のスライドです。
+          </div>
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/4oiqNSfzzdI?si=ytjsiKJ516vVunLp"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            虎の穴ラボの「TechConference Vol.3」に登壇した時の動画です。
+          </div>
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/eThggWcCM6s?si=4g5RokpGLa2CoIeW"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            虎の穴ラボの「TechConference
+            Vol.3」で開催したLT大会に登壇した時の動画です。
+          </div>
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://speakerdeck.com/player/488cdc518eab47c28dc6e95c2ce62be7?slide=1"
+            title="新規社内システムのモダンなフロントエンド開発について 〜開発の高速化でDXを促進！〜"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            「TechConference Vol.2」に登壇した時のスライドです。
           </div>
         </div>
         <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
@@ -995,28 +1017,67 @@ export default function Home() {
             allowFullScreen={true}
           ></iframe>
           <div className="text-sm">
-            とらのあなラボのTechConferenceVol.2で開催したLT大会に登壇した時のスライドです。
+            「TechConference Vol.2」で開催したLT大会に登壇した時のスライドです。
           </div>
         </div>
         <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/4oiqNSfzzdI?si=ytjsiKJ516vVunLp"
-            className="h-80 w-full"
+            src="https://www.docswell.com/slide/KNVL2Z/embed"
+            className="h-64 w-full"
             allowFullScreen={true}
           ></iframe>
           <div className="text-sm">
-            とらのあなラボ Tech Conference Vol.3に登壇した時の動画です。
+            Another
+            works様主催の「フロントエンドLT」イベントに登壇した時のスライドです。
           </div>
         </div>
         <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/eThggWcCM6s?si=4g5RokpGLa2CoIeW"
+            src="https://www.slideshare.net/slideshow/embed_code/key/6pJeVeFLt6DUmv?startSlide=1"
             className="h-80 w-full"
             allowFullScreen={true}
           ></iframe>
           <div className="text-sm">
-            とらのあなラボ Tech Conference
-            Vol.3で開催したLT大会に登壇した時の動画です。
+            「toranoana@LT #27 x
+            Serverless（サーバーレス）」に登壇した時のスライドです。
+          </div>
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSX-hY-np9-zxupsXLRad9VIZGjsxaJIp4CUL3j0BEEa6tGe73AZv5NbOiVieVmCA/embed?start=false&loop=true&delayms=3000"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            「オタクが最新技術を追う LTイベント
+            #25」に登壇した時のスライドです。
+          </div>
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://www.slideshare.net/slideshow/embed_code/key/J8wiVTdY4RLfyS?startSlide=1"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            「オタクが最新技術を追うLTイベント#24」に登壇した時のスライドです。
+          </div>
+        </div>
+        <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
+          <iframe
+            src="https://www.slideshare.net/slideshow/embed_code/key/y66bsaKqF1CiiE?startSlide=1"
+            className="h-80 w-full"
+            allowFullScreen={true}
+          ></iframe>
+          <div className="text-sm">
+            「オタクが最新技術を追うLTイベント#23」に登壇した時のスライドです。
+            <a
+              href="https://toranoana-lab.hatenablog.com/entry/2021/03/02/175626"
+              className="link"
+              target="_blank"
+            >
+              ブログ版はこちら。
+            </a>
           </div>
         </div>
       </div>
