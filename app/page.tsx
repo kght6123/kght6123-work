@@ -951,7 +951,7 @@ export default function Home() {
       </div>
       {/* クリックしたら、詳細をモーダルで表示する */}
       <div
-        className="carousel-item grid h-full grid-cols-1 items-center gap-4 overflow-x-auto bg-primary-content px-4 pb-4 pt-28 md:grid-cols-2 xl:grid-cols-3"
+        className="carousel-item grid grid-cols-1 items-center gap-4 bg-primary-content px-4 pb-4 pt-28 sm:h-full sm:overflow-x-auto md:grid-cols-2 xl:grid-cols-3"
         id="documents"
       >
         <div className="space-y-2 rounded bg-base-content p-4 drop-shadow">
