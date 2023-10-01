@@ -18,7 +18,7 @@ export default function Home() {
     </svg>
   );
   return (
-    <Main className="carousel carousel-vertical h-screen w-screen">
+    <Main className="h-screen w-screen sm:carousel sm:carousel-vertical">
       {/* Hero、区切り区切りに入れていく */}
       <div
         className="carousel-item hero min-h-screen bg-base-200 pt-10 sm:pt-0"
