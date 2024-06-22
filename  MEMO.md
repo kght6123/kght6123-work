@@ -2,7 +2,7 @@
 
 ## 構築
 
-Cloud Flareでホスティングする
+Cloud Flareでホスティングする。Pushすれば自動でデプロイされるようになっている。
 
 https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/#preview-your-site
 
