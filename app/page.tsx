@@ -50,7 +50,7 @@ export default function Home() {
             </div>
             <div className="chat chat-start">
               <div className="chat-bubble text-sm">
-                工場系SIerを12年、地元ベンチャー企業を2年。現在は虎の穴ラボで2年半勤務し、アーキテクト/セキュリティを担当。
+                工場系SIerを12年、地元ベンチャー企業を2年。現在は虎の穴ラボに在籍中、主にアーキテクト/セキュリティを担当。
               </div>
             </div>
             <div className="chat chat-end">
@@ -60,7 +60,8 @@ export default function Home() {
                   className="link"
                   target="_blank"
                 >
-                  {linkIcon}技術書典11〜14へ参加、累計228部を頒布。
+                  {linkIcon}
+                  技術書典11〜16へ参加、個人で技術同人誌をいくつか頒布。
                 </a>
               </div>
             </div>
