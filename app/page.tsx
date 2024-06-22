@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="chat chat-end">
               <div className="chat-bubble text-sm">
-                1〜2年以上経験: React/Vue/Tailwind CSS/TypeScript/Bootstrap
+                2年以上経験: React/Tailwind CSS/TypeScript
               </div>
             </div>
             <div className="chat chat-start">
@@ -196,42 +196,73 @@ export default function Home() {
         <div className="card bg-base-300 shadow-xl lg:card-side">
           <figure>
             <Image
-              src="https://dummyimage.com/600x400/000/fff.png&text=Coming+Soon!!"
+              alt="VivlioStyleとRehype/RemarkではじめるCSS組版による同人誌制作!!の表紙"
               className="!static !max-h-40 object-cover"
-              alt="Coming Soon!!"
+              src="vivliostyle-rehype-remark.png"
               fill
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Coming Soon!!</h2>
+            <h2 className="card-title">
+              VivlioStyleとRehype/RemarkではじめるCSS組版による同人誌制作!!
+            </h2>
             <div className="badge badge-secondary">技術書典15</div>
             <p className="text-sm">
-              技術書典15向けの同人誌を執筆中です。Next.jsとTailwind CSS、App
-              Routerによるアプリケーション作成のノウハウをまとめた本になります。
+              VivlioStyle Viewerと Remark・Rehype
+              を利用して、筆者が考える魅力的な同人誌を効率よく作成するためのノウハウをまとめた本になります。
             </p>
-            {/* <div className="card-actions justify-end">
+            <div className="card-actions justify-end">
               <a
+                href="https://techbookfest.org/product/irrGnuyPPYz2g1jHizV6cZ"
                 className="btn btn-primary btn-outline btn-xs"
                 target="_blank"
-                href="#"
               >
                 技術書典
               </a>
               <a
                 className="btn btn-primary  btn-outline btn-xs"
+                href="https://booth.pm/ja/items/5757411"
                 target="_blank"
-                href="#"
               >
                 Booth
               </a>
+            </div>
+          </div>
+        </div>
+        <div className="card bg-base-300 shadow-xl lg:card-side">
+          <figure>
+            <Image
+              alt="Next.jsとTailwind CSSで始めるWebアプリケーション開発!!の表紙"
+              className="!static !max-h-40 object-cover"
+              src="nextjs-tailwindcss.jpg"
+              fill
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              Next.jsとTailwind CSSで始めるWebアプリケーション開発!!
+            </h2>
+            <div className="badge badge-secondary">技術書典15</div>
+            <p className="text-sm">
+              Next.jsとTailwind CSS、App
+              Routerによるアプリケーション作成のノウハウをまとめた本になります。
+            </p>
+            <div className="card-actions justify-end">
+              <a
+                href="https://techbookfest.org/product/bNzSigTMgMXUWWRSyCdHuU"
+                className="btn btn-primary btn-outline btn-xs"
+                target="_blank"
+              >
+                技術書典
+              </a>
               <a
                 className="btn btn-primary  btn-outline btn-xs"
+                href="https://booth.pm/ja/items/4485386"
                 target="_blank"
-                href="#"
               >
-                Amazon
+                Booth
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="card bg-base-300 shadow-xl lg:card-side">
@@ -323,7 +354,7 @@ export default function Home() {
             <Image
               className="!static !max-h-40 object-cover"
               alt="MiraiBoardのスクリーンショット"
-              src="/MiraiBoard.png"
+              src="/MiraiBoard.jpg"
               fill
             />
           </figure>
